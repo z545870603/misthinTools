@@ -7,11 +7,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Home',
     redirect: '/template'
   },
-  {
-    path: '/template',
-    name: 'template',
-    component: () => import(/* webpackChunkName: "template" */ '../views/Template/index.vue')
-  },
+  // {
+  //   path: '/template',
+  //   name: 'template',
+  //   component: () => import(/* webpackChunkName: "template" */ '../views/Template/index.vue')
+  // },
   {
     path: '/deploy',
     name: 'deploy',

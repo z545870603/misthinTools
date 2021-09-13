@@ -37,11 +37,11 @@ export default defineComponent({
   setup() {
     const router = useRouter();
     const menu = [
-      {
-        title: '项目模板',
-        link: '/template',
-        icon: <CoffeeOutlined />
-      },
+      // {
+      //   title: '项目模板',
+      //   link: '/template',
+      //   icon: <CoffeeOutlined />
+      // },
       {
         title: '一键部署',
         link: '/deploy',

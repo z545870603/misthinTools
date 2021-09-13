@@ -11,6 +11,8 @@ import registerModule from './modules';
 const isDevelopment = process.env.NODE_ENV !== 'production';
 import config from '../config';
 
+
+
 fixPath(); // 修复打包后的path
 // Scheme must be registered before the app is ready
 protocol.registerSchemesAsPrivileged([
@@ -49,6 +51,7 @@ async function createWindow() {
       // See nklayman.github.io/vue-cli-plugin-electron-builder/guide/security.html#node-integration for more info
       nodeIntegration: (process.env
         .ELECTRON_NODE_INTEGRATION as unknown) as boolean,
+      // nodeIntegration: false
     },
   });
 
